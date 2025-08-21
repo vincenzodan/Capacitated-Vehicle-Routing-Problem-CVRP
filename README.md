@@ -1,19 +1,18 @@
-# 
 # 🚚 Capacitated Vehicle Routing Problem (CVRP)
 
 Questo progetto affronta il problema del **Capacitated Vehicle Routing (CVRP)** utilizzando tre diversi approcci di risoluzione, confrontandone risultati e prestazioni.
 
 ## ⚙️ Approcci Implementati
 
-1. **Approccio esatto con Gurobi (`gurobipy`)**
+1. [Approccio esatto con Gurobi](./CVRP.ipynb)
    - Risoluzione ottimale tramite programmazione lineare intera.
    - Richiede una **licenza Gurobi attiva** (accademica o WLS).
 
-2. **Approccio euristico**
+2. [Approccio euristico](./Euristica.ipynb)
    - Algoritmo **Clarke & Wright Savings** migliorato con **Nearest Neighbor** e **3-opt**.
    - Produce soluzioni rapide, vicine all’ottimo.
 
-3. **Algoritmo genetico (GA)**
+3. [Algoritmo genetico](./Algoritmo_Genetico.ipynb)
    - Approccio metaeuristico evolutivo per ottenere soluzioni approssimate di buona qualità.
 
 ## 🛠️ Tecnologie Utilizzate
@@ -61,7 +60,7 @@ pip install -r requirements.txt
 - Le licenze accademiche possono essere richieste tramite [Gurobi Academic](https://www.gurobi.com/academia/academic-program-and-licenses/).
 
 ## 📂 Struttura del progetto
-
+```
 Capacitated-Vehicle-Routing-Problem-CVRP/
 │
 ├── test_instances/ # File di input (.vrp) per le istanze del problema e soluzioni (.sol)
@@ -69,11 +68,10 @@ Capacitated-Vehicle-Routing-Problem-CVRP/
 ├── Euristica.ipynb # Notebook con Clarke & Wright + miglioramenti
 ├── Algoritmo_Genetico.ipynb # Notebook con algoritmo genetico
 └── requirements.txt # Dipendenze Python necessarie
-
+```
 ## 📊 Risultati e Valutazione
 
 I risultati sono confrontati in termini di:
-
 - Costo totale della soluzione
 - Tempo computazionale
 - Gap rispetto alla soluzione ottima (quando disponibile)
